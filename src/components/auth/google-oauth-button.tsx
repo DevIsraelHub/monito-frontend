@@ -10,6 +10,7 @@ const GoogleOauthButton = (props: { label: string }) => {
   };
   return (
     <Button
+      disabled
       onClick={handleClick}
       variant="outline"
       type="button"

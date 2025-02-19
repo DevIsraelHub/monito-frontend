@@ -6,6 +6,7 @@ import "./index.css";
 import App from "./App.tsx";
 import QueryProvider from "./context/query-provider.tsx";
 import { Toaster } from "./components/ui/toaster.tsx";
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
         <App />
       </NuqsAdapter>
       <Toaster />
+      <Analytics />
     </QueryProvider>
   </StrictMode>
 );
